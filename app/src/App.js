@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import { useSpeech } from "react-text-to-speech";
 
-function App() {
+export default function App() {
+  const {
+    Text, // Component that returns the modified text property
+    speechStatus, // String that stores current speech status
+    isInQueue, // Boolean that stores whether a speech utterance is either being spoken or present in queue
+    start, // Function to start the speech or put it in queue
+    pause, // Function to pause the speech
+    stop, // Function to stop the speech or remove it from queue
+  } = useSpeech({ text: "mamagu evo" });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: "flex", flexDirection: "column", rowGap: "1rem" }}>
+      <Text />
+      <div style={{ display: "flex", columnGap: "0.5rem" }}>
+        {speechStatus !== "started" ? <button onClick={start}>Start</button> : <button onClick={pause}>Pause</button>}
+        <button onClick={stop}>Stop</button>
+      </div>
     </div>
   );
 }
-
-export default App;

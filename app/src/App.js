@@ -2,9 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 
-export default function App() {
-  const text = "Turbo mamagu evo";
-
+export default function App({mensaje}) {
+  const text = mensaje
   const handleSpeak = () => {
     if (text.trim() !== '') {
       const utterance = new SpeechSynthesisUtterance(text);

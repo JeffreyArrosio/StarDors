@@ -1,8 +1,19 @@
 .App {
   text-align: center;
 }
+
 *{
   font-family: 'Starwars';
+}
+
+#imagenes img{
+  width: 350px;
+  height: 400px;
+  margin-right: 10px;
+}
+
+.display{
+  display: none;
 }
 
 .creative-commons {

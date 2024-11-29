@@ -13,7 +13,7 @@ export default function App({ mensaje }) {
 
   return (
     <div>
-      <div className="text-white aumentar restaurar"
+      <div className="text-white container mx-auto aumentar restaurar mb-2"
         onMouseOver={handleSpeak}
       >{text}</div>
     </div>

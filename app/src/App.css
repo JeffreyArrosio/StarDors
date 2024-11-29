@@ -5,6 +5,18 @@
   font-family: 'Starwars';
 }
 
+.creative-commons {
+  display: inline-block;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+}
+
+.creative-commons img {
+  height: 22px;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+}
+
 body{
   background-image: url('../public/Images/estrellas.webp');
   background-repeat: no-repeat;

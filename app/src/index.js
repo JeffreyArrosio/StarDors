@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Header from './Components/Content';
 import Botones from './Components/botones';
+import Footer from './Components/footer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <Botones />
     <App mensaje={"Turbo mamagu evo"}/>
     <App mensaje={"Putero"}/>
+    <Footer />
   </React.StrictMode>
 );
 

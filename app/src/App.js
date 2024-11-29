@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function App({mensaje}) {
+export default function App({ mensaje }) {
   const text = mensaje
   const handleSpeak = () => {
     if (text.trim() !== '') {
@@ -13,9 +13,8 @@ export default function App({mensaje}) {
 
   return (
     <div>
-      <h1>Texto a Voz</h1>
-      <div
-      onMouseOver={handleSpeak}
+      <div className="text-white aumentar restaurar"
+        onMouseOver={handleSpeak}
       >{text}</div>
     </div>
   );

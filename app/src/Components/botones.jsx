@@ -24,6 +24,7 @@ function Botones() {
         }
         const handleMute = () => {
             window.global === 1 ? window.global = 0 : window.global = 1
+            window.speechSynthesis.cancel()
         }
         if (aumento)
             aumento.addEventListener('click', handleAumentar)

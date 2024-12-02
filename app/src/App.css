@@ -16,6 +16,43 @@
   display: none;
 }
 
+.image{
+  width: 400px;
+  height: 500px;
+}
+
+h2{
+  font-size: 30px;
+}
+.rojo{
+  text-shadow:
+  1px 1px 0px red, 
+  -1px 1px 0px red,  
+  1px -1px 0px red, 
+  -1px -1px 0px red; 
+}
+.verde{
+  text-shadow:
+  1px 1px 0px green, 
+  -1px 1px 0px green,  
+  1px -1px 0px green, 
+  -1px -1px 0px green; 
+}
+.azul{
+  text-shadow:
+  1px 1px 0px cyan, 
+  -1px 1px 0px cyan,  
+  1px -1px 0px cyan, 
+  -1px -1px 0px cyan; 
+}
+.morado{
+  text-shadow:
+  1px 1px 0px purple, 
+  -1px 1px 0px purple,  
+  1px -1px 0px purple, 
+  -1px -1px 0px purple; 
+}
+
 .creative-commons {
   display: inline-block;
   margin-left: 3px;

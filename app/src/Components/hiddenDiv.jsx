@@ -30,10 +30,10 @@ export default function Hidden({ clase, titulo, mensaje }) {
 
     return (
         <div className={`container mx-auto ${clase} display`}>
-            <h2 className="text-white aumentar restaurar mb-2 "
+            <h2 className=" aumentar restaurar mb-2 "
                 onMouseOver={handleSpeak}>
                 {titulo}</h2>
-            <div className="text-white aumentar restaurar mb-2"
+            <div className=" aumentar restaurar mb-2"
                 onMouseOver={handleSpeak}
             >{text}</div>
             <div className='image mx-auto mt-4'>{image}</div>
